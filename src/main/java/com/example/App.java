@@ -1,4 +1,5 @@
 package com.example;
+
 public class App {
     public static boolean isPrime(int n) {
         if (n <= 1) return false;
@@ -7,10 +8,14 @@ public class App {
         }
         return true;
     }
+
     public static void main(String[] args) {
-        for (int i = 1; i <= 20; i++) {
-            if (isPrime(i)) System.out.print(i + " ");
+        int limit = 20;
+        System.out.println("Prime numbers up to " + limit + ":");
+        for (int i = 1; i <= limit; i++) {
+            if (isPrime(i)) {
+                System.out.print(i + " ");
+            }
         }
     }
 }
-
